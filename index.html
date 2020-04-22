@@ -3,21 +3,43 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	 <title>민주 로고 다운</title>
 	 
-</head>
-	<nav><nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  
-
 
   <body>
 	<h1>여기 밑에!</h1>
 	  <a class="btn btn-primary" href="/2020021118252587983_x.jpg"
-	     download="newfilename">DownLoad Btn</a>
-  </body>
- </html>
+	     download="newfilename">DownLoad</a>
+
+<script type="text/javascript">
+<!--
+    setInterval("dpTime()",1000);
+    function dpTime(){
+       var now = new Date();
+        hours = now.getHours();
+        minutes = now.getMinutes();
+        seconds = now.getSeconds();
+ 
+        if (hours > 12){
+            hours -= 12;
+        ampm = "오후 ";
+        }else{
+            ampm = "오전 ";
+        }
+        if (hours < 10){
+            hours = "0" + hours;
+        }
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+document.getElementById("dpTime").innerHTML = ampm + hours + ":" + minutes + ":" + seconds;
+    }
+//-->
+</script>
+ 
+<span id="dpTime">오후 01:48:18</span>
+	 </body>
+	 </html>
 
 
