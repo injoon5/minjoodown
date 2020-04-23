@@ -1,0 +1,36 @@
+<html>
+<head/>
+<title>Jorgesys Html test</title>
+<script type="text/javascript">
+  var imageUrls = [
+       "http://prueba.agenciareforma.com/appiphone/android/img/newspapers/stackoverflow.png"
+     , "http://ww.mydomain.com/img/newspapers/reforma.png"
+     , "http://ww.mydomain.com/img/newspapers/nytimes.png"
+     , "http://ww.mydomain.com/img/newspapers/oglobo.png"
+     , "http://ww.mydomain.com/img/newspapers/lefigaro.png"
+     , "http://ww.mydomain.com/img/newspapers/spiegel.png"
+  ];
+ var imageLinks = [
+       "http://www.stackoverflow.com"
+      , "http://www.reforma.com"
+       , "http://www.nytimes.com/"
+      , "https://oglobo.globo.com/"
+      , "http://www.lefigaro.fr/international/"
+     , "http://www.spiegel.de/international/"    
+  ];
+
+  function getImageHtmlCode() {
+    var dataIndex = Math.floor(Math.random() * imageUrls.length);
+    var img = '<a href=\"' + imageLinks[dataIndex] + '"><img src="';        
+    img += imageUrls[dataIndex];
+    img += '\" alt=\"Jorgesys Stackoverflow.com\"/></a>';
+    return img;
+  }
+</script>
+</head>
+<body bgcolor="white">
+<script type="text/javascript">
+  document.write(getImageHtmlCode());
+</script>
+</body>
+</html>
